@@ -1,0 +1,93 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3{
+    color: purple;
+}
+h1{
+    color: #B92B27;
+}
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #B92B27;
+    color: white;
+}
+.upvote{
+    background-color: green;
+    color: white;
+}
+/* Decendent selector*/
+.post a{
+    color:purple;
+    text-decoration: none;
+    border: 1px solid black;   
+}
+
+nav ul li{
+    color: #B92B27;
+}
+nav ul li a{
+    text-decoration: none;
+}
+p + h3{
+    text-decoration: underline;
+}
+.upvote + button{
+        background-color: cornflowerblue;
+}
+div >input{
+    background-color:darkgray;
+}
+
+/* attributeSelector */
+
+input[type="text"]{
+    color: green;
+}
+
+input[type="password"]{
+   color: red;
+}
+button:hover{
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+}
+h3:hover{
+    text-decoration: none;
+    text-decoration: overline;
+}
+p:hover{
+    color: blue;
+}
+button:active{
+    background-color: rgb(110, 13, 29);
+    color: black;
+}
+p:active{
+    font-size: bold;
+    color: green;
+}
+
+/* attribute property +sibling property */
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+div:nth-of-type(){
+   background-color: aqua;
+}
+h1::first-letter{
+    color: cornflowerblue;
+    
+}
+p::first-line{
+    color: rgb(217, 79, 10);
+    font-size: bold;
+}
+p::selection{
+    background-color: rgb(12, 128, 24);
+}
+
